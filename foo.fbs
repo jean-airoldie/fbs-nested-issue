@@ -1,0 +1,9 @@
+namespace foo;
+
+struct Order {
+    id: long;
+}
+
+table NestedOrder {
+    buf: [ubyte] (nested_flatbuffer: "Order");
+}
